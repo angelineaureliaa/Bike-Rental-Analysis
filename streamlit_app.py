@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set(style="whitegrid")
 
-hour_df = pd.read_csv('hour.csv')
+hour_df = pd.read_csv('data/hour.csv')
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 min_date = hour_df['dteday'].min()
 max_date = hour_df['dteday'].max()

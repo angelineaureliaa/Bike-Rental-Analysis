@@ -5,7 +5,7 @@ import seaborn as sns
 from datetime import datetime
 sns.set(style="whitegrid")
 
-hour_df = pd.read_csv('C:/Users/User/submission/data/hour.csv')
+hour_df = pd.read_csv('data/hour.csv')
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 min_date = hour_df['dteday'].min()
 max_date = hour_df['dteday'].max()
