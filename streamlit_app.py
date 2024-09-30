@@ -2,10 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from datetime import datetime
 sns.set(style="whitegrid")
 
-hour_df = pd.read_csv('C:/Users/User/submission/data/hour.csv')
+hour_df = pd.read_csv('hour.csv')
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
 min_date = hour_df['dteday'].min()
 max_date = hour_df['dteday'].max()
